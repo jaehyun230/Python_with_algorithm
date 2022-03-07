@@ -8,7 +8,7 @@ d = [0] * (n+1) # 각 노드까지의 깊이
 c = [0] * (n+1) # 각 노드의 깊이가 계산되었는지 여부
 graph = [[] for _ in range(n+1)] # 그래프 정보
 
-for _ in range =(n-1) :
+for _ in range (n-1) :
   a, b = map(int, input().split())
   graph[a].append(b)
   graph[b].append(a)
