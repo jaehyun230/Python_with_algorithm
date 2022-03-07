@@ -3,7 +3,7 @@ sys.setrecursionlimit(int(1e5)) # 런타임 오류를 피하기 위함
 LOG = 21 # 2^20 = 1,000,000
 
 n = int(input())
-parent = [0] * (n+1) # 부모 노드 정보
+parent = [[0] * LOG for _ in range(n+1)] # 부모 노드 정보
 d = [0] * (n+1) # 각 노드까지의 깊이
 c = [0] * (n+1) # 각 노드의 깊이가 계산되었는지 여부
 graph = [[] for _ in range(n+1)] # 그래프 정보
