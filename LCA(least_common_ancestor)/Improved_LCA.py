@@ -20,7 +20,7 @@ def dfs(x, depth) :
   for y in graph[x] :
     if c[y] : # 이미 깊이를 구하였다면
       continue
-    parent[y] = x
+    parent[y][0] = x
     dfs(y, depth +1)
 
 def set_parent():
