@@ -1,13 +1,16 @@
-data = list(input())
-answer = ""
+data = input()
+result = []
 sum = 0
-for i in range(len(data)) :
-  if data[i].isalpha() :
-    answer +=data[i]
+for i in data :
+  if i.isalpha() :
+    result.append(i)
   else :
-    sum +=int(data[i])
+    sum +=int(i)
 
-answer.sort()
-answer +=str(sum)
+result.sort()
+if sum != 0 :
+  result.append(str(sum))
+
+answer = ''.join(result)
 
 print(answer)
