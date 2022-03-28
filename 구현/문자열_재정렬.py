@@ -7,6 +7,7 @@ for i in range(len(data)) :
   else :
     sum +=int(data[i])
 
+answer.sort()
 answer +=str(sum)
 
 print(answer)
